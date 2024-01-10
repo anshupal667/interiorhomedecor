@@ -9,6 +9,7 @@ import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import ViewMoreCards from "../home/viewmore/ViewMoreCards"
+import OurPartners from "../partners/OurPartners"
 
 const Pages = () => {
   return (
@@ -23,6 +24,7 @@ const Pages = () => {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/viewmore/:name' component={ViewMoreCards} />
+          <Route exact path='/partners' component={OurPartners} />
         </Switch>
         <Footer />
       </Router>

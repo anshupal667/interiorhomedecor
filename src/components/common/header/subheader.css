@@ -1,0 +1,118 @@
+.subheader {
+    background-color: #fff;
+    height: 7vh;
+    /* box-shadow: 0 5px 30px rgb(0 22 84 / 10%); */
+    padding: 0px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    /* border: 2px solid yellow; */
+    width: 100%;
+  }
+
+  .subheader a {
+    margin-left: 30px;
+    transition: 0.5s;
+    /* font-weight: 500; */
+    font-size: 12px;
+  }
+  .subheader a:hover {
+    color: #27ae60;
+  }
+  header span {
+    width: auto;
+    padding: 0px 6px;
+    background: #27ae60;
+    border-radius: 50px;
+    color: #ffffff;
+    margin-right: 4px;
+    font-weight: 400;
+  }
+  header h4 {
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  header .toggle {
+    display: none;
+  }
+
+  .subheader .nav .flex {
+    /* display: none; */
+    /* border:2px solid red; */
+    width: 100%;
+    /* justify-content: end; */
+  }
+  .subheader .navlistCustomerSupport .flex {
+    /* border:2px solid red; */
+    justify-content: end;
+    margin-right:18px ;
+    /* display: none; */
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0;
+    }
+    header img {
+      margin-top: 30px;
+    }
+    header .button {
+      display: none;
+    }
+    .subheader .nav .flex {
+      display: none;
+      border:2px solid red;
+      width: 100%;
+    }
+    .subheader .navlistCustomerSupport .flex {
+        border:2px solid red;
+        display: none;
+      }
+    header .toggle {
+      display: block;
+      margin-top: 20px;
+    }
+    header .small {
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      width: 100%;
+      background-color: #27ae60;
+      padding: 20px;
+    }
+    header li a {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+  
+  /* subheader.css */
+
+/* Add your existing styles here */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 19px;
+  /* bottom: -120%; /* Position the dropdown below the Customer Support link */
+  width: 130px; /* Adjust the width as needed */
+  background-color: white;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 8px 8px;
+  list-style: none;
+  font-size: 12px;
+}
+
+/* Adjust the appearance of the dropdown as needed */

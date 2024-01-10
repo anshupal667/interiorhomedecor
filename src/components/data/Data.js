@@ -24,6 +24,20 @@ export const nav = [
     path: "/contact",
   },
 ]
+export const subnavlist=[
+  {
+    text: "Partner with Advent",
+    path: "/partnerAdvent",
+  },
+  {
+    text: "refer and earn",
+    path: "/referandearn",
+  },
+  {
+    text: "join us",
+    path: "/joinus",
+  },
+]
 export const featured = [
   {
     cover: "../images/hero/h1.png",
@@ -77,6 +91,45 @@ export const offer = [
     cover: "../newinages/electrical.jpg",
     name: "Electrical",
     
+  },
+]
+
+export const partners=[
+  {
+    cover:"../ourpartners/asianpaint.png",
+    // name:'ap',
+  },
+  {
+    cover:"../ourpartners/centuryply.png",
+    // name:'cp',
+  },
+  {
+    cover:"../ourpartners/hafele.png",
+    // name:'ap',
+  },
+  {
+    cover:"../ourpartners/Havells.png",
+    // name:'cp',
+  },
+  {
+    cover:"../ourpartners/Hindware.jpg",
+    // name:'cp',
+  },
+  {
+    cover:"../ourpartners/italico.png",
+    // name:'ap',
+  },
+  {
+    cover:"../ourpartners/jaquar.png",
+    // name:'cp',
+  },
+  {
+    cover:"../ourpartners/Logo_Merino.png",
+    // name:'ap',
+  },
+  {
+    cover:"../ourpartners/sleepwell.png",
+    // name:'cp',
   },
 ]
 export const list = [
