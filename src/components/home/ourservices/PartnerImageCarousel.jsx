@@ -11,20 +11,17 @@ const PartnerImageCarousel = ({ images }) => {
       showStatus={false}
       centerMode={true}
       infiniteLoop={true}
-      centerSlidePercentage={35}
+      centerSlidePercentage={25} // Adjust the percentage to display four slides
       dynamicHeight={false} // Disable dynamic height to avoid layout issues
       autoPlay={true} // Enable auto-scroll
-      interval={3000} // Set the interval in milliseconds (e.g., 3000ms or 3 seconds)
+      interval={2000} // Set the interval in milliseconds (e.g., 3000ms or 3 seconds)
       showIndicators={false}
-     
     >
       {images.map((image, index) => (
-        <>
-        <div key={index} className="carousel-slide" style={{height:"14vh", width:'14vw'}}>
+        <div key={index} className="carousel-slide" style={{ height: "14vh", width: '14vw' }}>
           <img src={image.cover} alt={`Image ${index}`} />
+          <p>{image.name}</p>
         </div>
-          <p>{image.name}</p> 
-          </>
       ))}
     </Carousel>
   );
