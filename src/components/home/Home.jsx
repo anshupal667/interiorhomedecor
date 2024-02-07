@@ -8,16 +8,21 @@ import Recent from "./recent/Recent"
 import Team from "./team/Team"
 import Services from "./ourservices/Services"
 import OurPartners from "../partners/OurPartners"
+import Gallery from "./recent/Gallery"
+import RecentPropertyList from "./recent/RecentPropertyListed"
 
 const Home = () => {
   return (
     <>
       <Hero />
       <Featured />
-      <Recent />
+      <RecentPropertyList/>
+      {/* <Recent /> */}
       <Awards />
       <Services/>
+      {/* <Gallery/> */}
       <Location />
+    
       <Team />
       <OurPartners/>
       {/* <Price /> */}

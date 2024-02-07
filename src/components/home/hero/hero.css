@@ -1,20 +1,71 @@
 .hero {
-  background-image: url("../../../../public/images/banner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 90vh;
+  position: relative;
   width: 100%;
 }
-.hero .container {
-  padding-top: 15%;
+
+.carousel-slide1 {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/ourpartners/banner.png);
+ /* Adjust text color based on your design */
 }
-.hero h1 {
-  color: #fff;
+.carousel-slide2 {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/ourpartners/banner2.jpg);
+ /* Adjust text color based on your design */
+}
+.carousel-slide3 {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/ourpartners/banner3.jpg);
+ /* Adjust text color based on your design */
+}
+.carousel-slide4 {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/ourpartners/banner4.jpg);
+ /* Adjust text color based on your design */
+}
+
+.container-hero {
+  text-align: center;
+}
+
+.content-hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.content-hero h1 {
+  color: #fff; /* Set title color to white */
   font-size: 60px;
 }
-.hero p {
-  color: #fff;
+
+.content-hero p {
+  color: #fff; /* Set subtitle color to white */
   opacity: 0.8;
 }
 form {

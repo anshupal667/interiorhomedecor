@@ -1,20 +1,71 @@
-import React from "react"
-import Heading from "../../common/Heading"
-import "./hero.css"
+import React from "react";
+import Slider from "react-slick";
+import Heading from "../../common/Heading";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./hero.css";
 
 const Hero = () => {
-  return (
-    <>
-      <section className='hero'>
-        <div className='container'>
-          <Heading title='Luxirious Creative and Comfortable Interiors' subtitle='Innovative Designs, Personalized for You' />
-        </div>
-      </section>
-    </>
-  )
-}
+  const carouselSettings = {
+    
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Adjust the speed of the carousel
+  };
 
-export default Hero
+  return (
+    <section className="hero">
+      <Slider {...carouselSettings}>
+        {/* Slide 1 */}
+        <div className="carousel-slide1">
+          <div className="container-hero">
+            <div className="content-hero">
+              <Heading title="Luxurious Creative and Comfortable Interiors" subtitle="Innovative Designs, Personalized for You" />
+              {/* Your form or other content can be added here */}
+            </div>
+          </div>
+        </div>
+
+        {/* Slide 2 */}
+        <div className="carousel-slide2" >
+          <div className="container-hero">
+            <div className="content-hero">
+              <Heading title="Elegant and Modern Living Spaces" subtitle="Exceptional Designs Tailored to Your Lifestyle" />
+              {/* Your form or other content can be added here */}
+            </div>
+          </div>
+        </div>
+             {/* Slide 3 */}
+             <div className="carousel-slide3" >
+          <div className="container-hero">
+            <div className="content-hero">
+              <Heading title="Creating Spaces that Reflect Your Unique Style" subtitle="Sleek and Stylish Interiors" />
+              {/* Your form or other content can be added here */}
+            </div>
+          </div>
+        </div>
+             {/* Slide 4 */}
+             <div className="carousel-slide4">
+          <div className="container-hero">
+            <div className="content-hero">
+              <Heading title="Contemporary Elegance Timeless Appeal" subtitle="Crafting Interiors that Stand the Test of Time" />
+              {/* Your form or other content can be added here */}
+            </div>
+          </div>
+        </div>
+
+        {/* Add more slides as needed */}
+      </Slider>
+    </section>
+  );
+};
+
+export default Hero;
+
 
 // import React from 'react';
 // import Slider from 'react-slick';
