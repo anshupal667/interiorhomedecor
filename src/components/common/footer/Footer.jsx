@@ -60,40 +60,46 @@ const Footer = () => {
         </div>
       )}
 
-
-
-      <footer>
+      <footer className='footer' >
         <div className='container'>
           <div className='box'>
-            <div className='logo'>
-              {/* <img src='../images/logo-light.png' alt='' /> */}
-              <h2>Do You Need Help With Anything?</h2>
-              <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
-
-              <div className='input flex'>
-                <input type='text' placeholder='Email Address' />
-                <button>Subscribe</button>
-              </div>
-            </div>
+            <h3>CONTACT US</h3>
+            <ul>
+              <li>Office & Factory: Plot No. 49, Sector-31, Site-4, Greater Noida</li>
+              <li>Head Office: 6B, 101, Vrindavan Vistar Yojna, Lucknow</li>
+              <li>Email: info@adventinfratech.com</li>
+              <li>Contact: +91 120 420 3892</li>
+              <li>
+              <div className='map-container'>
+                  <iframe
+                    className='map-iframe'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28044.415970689367!2d77.5212096277884!3d28.476434500210206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc03da9eb2413%3A0xcaf03ad7dc15cc31!2s49%2C%20Surajpur%20Site%204%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310%2C%20India!5e0!3m2!1sen!2sus!4v1628475097905!5m2!1sen!2sus"
+                    allowFullScreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </li>
+            </ul>
           </div>
 
           {footer.map((val) => (
-            <div className='box'>
+            <div className='box' key={val.title}>
               <h3>{val.title}</h3>
               <ul>
-                {val.text.map((items) => (
-                  <li> {items.list} </li>
+                {val.text.map((items, index) => (
+                  <li key={index}>{items.list}</li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
       </footer>
+
       <div className='legal'>
-        <span>© 2021 comapny..</span>
+        <span>© Copyright 2024. All Rights Reserved by Advent Infratech</span>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
